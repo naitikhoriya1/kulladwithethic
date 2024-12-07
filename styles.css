@@ -10,12 +10,14 @@ html,
 body {
   height: 100%;
   width: 100%;
+  /* color: #fff; */
   /* background: #cb9e9e; */
-  background-color: #f6f5f1;
+  background-color: #feffea;
 }
 
 /* navbar  */
 .nav {
+  padding-top: 10px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -23,8 +25,15 @@ body {
 
 .icon {
   padding: 10px;
+  /* font-family: "Cinzel"; */
 }
 
+.icon h2 {
+  font-family: "Cinzel";
+  font-weight: 300;
+  /* font-size: .8rem; */
+  letter-spacing: 1px;
+}
 .nav-links {
   display: flex;
   justify-content: space-between;
@@ -52,7 +61,7 @@ body {
   padding: 3rem;
   width: 95%;
   height: 70vh;
-  background-image: url(./img/banner-image1.jpg);
+  background-image: url(./Assets/banner1.jpeg);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: right center;
