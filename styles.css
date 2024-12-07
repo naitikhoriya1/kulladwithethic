@@ -20,7 +20,7 @@ body {
   padding-top: 10px;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 .icon {
@@ -47,24 +47,17 @@ body {
   font-weight: 100;
 }
 
-.nav-search {
-  display: flex;
-  /* align-items: center; */
-  justify-content: space-between;
-  width: 10%;
-  padding: 0 10px;
-}
-
 /* hero section  */
 .hero {
   margin-top: 2rem;
-  padding: 3rem;
-  width: 95%;
+  padding: 2.5rem;
+  width: 97%;
   height: 70vh;
   background-image: url(./Assets/banner1.jpeg);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: right center;
+  border-radius: 10px;
 }
 
 .hero h1 {
@@ -132,11 +125,12 @@ body {
   padding: 2rem;
 }
 .about-img img {
-  height: 500px;
+  height: 450px;
   width: 700px;
   overflow: hidden;
   z-index: -100;
   clip-path: polygon(0px 0px, 100% 0px, 100% 100%, 0px 100%);
+  border-radius: 10px;
 }
 .about-text {
   width: 50%;
@@ -159,6 +153,8 @@ body {
   font-size: 1em;
   letter-spacing: 2px;
   /* background-color: #787d62; */
+  color: #fff;
+  background-color: #787d62;
   border: 0.7px solid #585252;
   cursor: pointer;
 }
