@@ -731,3 +731,215 @@ body {
 .contect {
   padding-right: 20px;
 }
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  /* Global adjustments */
+  body {
+    padding: 0 1rem;
+  }
+
+  /* Navbar */
+  .nav {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 0;
+  }
+  .icon h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+  .nav-links {
+    width: 100%;
+    justify-content: center;
+    gap: 20px;
+  }
+  .nav-links a {
+    font-size: 12px;
+  }
+
+  /* Hero Section */
+  .hero {
+    height: auto;
+    padding: 2rem 1rem;
+    background-size: cover;
+    text-align: center;
+  }
+  .hero h1 {
+    font-size: 2.5rem;
+  }
+  .hero > p {
+    opacity: 0;
+  }
+  .hero-btn {
+    font-size: 0.9rem;
+    padding: 1rem 2rem;
+  }
+
+  /* Row */
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .row-circle {
+    height: 60px;
+    width: 60px;
+  }
+  .row-circle img {
+    height: 40%;
+    width: 40%;
+  }
+  .first p {
+    font-size: 1rem;
+    margin-left: 5px;
+    /* margin-top: 10px; */
+    text-align: center;
+  }
+
+  /* About Section */
+  .about {
+    flex-direction: column;
+    gap: 1.5rem;
+    text-align: center;
+  }
+  .about-img img {
+    width: 100%;
+    height: auto;
+  }
+  .about-text {
+    width: 100%;
+    padding: 1rem;
+  }
+  .about-text h1 {
+    font-size: 2.5rem;
+  }
+  .about-text p {
+    font-size: 1rem;
+  }
+  .about-text button {
+    font-size: 0.9rem;
+    padding: 0.8rem 1.5rem;
+  }
+
+  /* Featured Section */
+  .featured {
+    height: auto;
+  }
+  .featured-heading {
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+  }
+  .featured-heading h1 {
+    font-size: 2rem;
+  }
+  .featured-heading p {
+    font-size: 0.8rem;
+  }
+
+  /* Slider */
+  .slider-wrapper .image-list {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+  .slider-wrapper .image-list .image-item {
+    width: 100%;
+    height: auto;
+  }
+
+  /* Testimonials */
+  .testimonials {
+    padding: 1rem;
+  }
+  .testimonials img {
+    width: 80px;
+    height: 80px;
+  }
+  .testimonials blockquote {
+    font-size: 1rem;
+  }
+
+  /* Card Section */
+  .card-container {
+    flex-direction: column;
+    gap: 15px;
+  }
+  .card {
+    width: 100%;
+    height: auto;
+  }
+  .card-image {
+    height: auto;
+  }
+  .card-details {
+    padding: 20px;
+  }
+  .card-title {
+    font-size: 1.2rem;
+  }
+  .card-description {
+    font-size: 0.9rem;
+  }
+
+  /* Subscribe Section */
+  .subscribe {
+    padding: 2rem 1rem;
+  }
+  .subscribe h1 {
+    font-size: 2rem;
+    text-align: center;
+  }
+  .subscribe-input input {
+    font-size: 1rem;
+  }
+  .subscribe-btn {
+    font-size: 1rem;
+  }
+
+  /* Trending Section */
+  .tranding {
+    flex-direction: column;
+  }
+  .tranding-images {
+    max-width: 100%;
+  }
+  .tranding-images img {
+    width: 100%;
+    height: auto;
+  }
+  .tranding-heading-h2 {
+    font-size: 1.5rem;
+  }
+
+  /* Articles Section */
+  .articals {
+    flex-direction: column;
+    padding: 1rem;
+  }
+  .artical-card {
+    width: 100%;
+  }
+  .artical-card img {
+    width: 80%;
+    height: auto;
+  }
+  .artical-card h2 {
+    font-size: 1.5rem;
+  }
+  .artical-card h6 {
+    font-size: 0.9rem;
+  }
+
+  /* Companies Section */
+  .comp-images {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  .selected-img {
+    width: 20%;
+    height: auto;
+  }
+}
