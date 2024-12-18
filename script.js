@@ -79,3 +79,18 @@ const initSlider = () => {
 
 window.addEventListener("resize", initSlider);
 window.addEventListener("load", initSlider);
+
+// for background music
+const audio = document.getElementById("background-music");
+const playButton = document.getElementById("play-audio");
+
+playButton.addEventListener("click", () => {
+  audio
+    .play()
+    .then(() => {
+      playButton.style.display = "none"; // Hide the button after starting the music
+    })
+    .catch((error) => {
+      console.error("Error playing the audio:", error);
+    });
+});

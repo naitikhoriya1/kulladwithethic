@@ -943,3 +943,7 @@ body {
     height: auto;
   }
 }
+
+#background-music {
+  display: none;
+}
