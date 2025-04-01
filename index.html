@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>DesiViskii Chai ☕️</title>
+    <title>Viski Chai ☕️</title>
     <link rel="stylesheet" href="styles.css" />
     <link
       href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
@@ -18,7 +18,7 @@
   <body>
     <div class="nav">
       <div class="icon">
-        <h2>DesiViskii Chai☕️</h2>
+        <h2>Viski Chai☕️</h2>
       </div>
       <div class="nav-links">
         <a href="#">HOME</a>
@@ -91,7 +91,7 @@
       <div class="about-text">
         <h1>About Us</h1>
         <p>
-          <b>DesiViskii Chai☕️</b> are among the very few
+          <b>Viski Chai☕️</b> are among the very few
           <b>leading chains</b> that truly have it all! From the
           <b>invigorating morning chai</b> to <b>delicious desi food</b>, we
           bring you a <b>cozy, authentic atmosphere</b> perfect for
@@ -225,12 +225,13 @@
       <div class="dot2"></div>
     </div>
     <div class="subscribe">
-      <h1>A Complete Desi Style Kullad</h1>
+      <h1>A Complete Clay Style Kullad</h1>
       <div class="subscribe-input">
-        <input type="text" placeholder="Enter A Note for Kullad" />
-        <button class="subscribe-btn">Connect</button>
+          <input type="text" id="whatsappMessage" placeholder="Enter A Note for Kullad" />
+          <button class="subscribe-btn" onclick="sendWhatsAppMessage()">Connect</button>
       </div>
-    </div>
+  </div>
+  
     <div class="featured-heading tranding-heading">
       <h1>Most Demanding Kullads</h1>
       <p>Fix Price <i class="ri-arrow-right-line"></i></p>
@@ -319,7 +320,7 @@
     <div class="footer">
       <div class="furnic">
         <div class="icon furnic-icon">
-          <h2>DesiViskii Chai☕️</h2>
+          <h2>Viski Chai☕️</h2>
         </div>
         <p class="footer-text">
           Embrace tradition with every sip, served in our handcrafted kullads.
@@ -378,6 +379,15 @@
       <!-- Your browser does not support the audio element. -->
     </audio>
 
+    <script>
+      function sendWhatsAppMessage() {
+          let message = document.getElementById("whatsappMessage").value;
+          let phoneNumber = "1234567890"; // Replace with the WhatsApp number
+          let url = `https://wa.me/${7877816484}?text=${encodeURIComponent(message)}`;
+          window.open(url, "_blank");
+      }
+  </script>
+  
     <script src="./script.js"></script>
   </body>
 </html>
