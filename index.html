@@ -1,411 +1,227 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Viski Chai ☕️</title>
-    <meta name="description" content="Premium Indian Whiskey Experience">
-    <meta name="theme-color" content="#787d62">
-    <link rel="stylesheet" href="styles.css" />
-    <link rel="manifest" href="manifest.json" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
-      rel="stylesheet"
-    />
-    <!-- //cdnjs.cloudflare.com/ajax/libs/flickity/1.0.0/flickity.css -->
-    <link
-      rel="stylesheet"
-      href="//cdnjs.cloudflare.com/ajax/libs/flickity/1.0.0/flickity.css"
-    />
-    <link rel="apple-touch-icon" href="/icons/icon-192x192.png">
-    <link rel="icon" type="image/png" href="/icons/icon-192x192.png">
-  </head>
-  <body>
-    <div class="nav">
-      <div class="icon">
-        <h2>Viski Chai☕️</h2>
-      </div>
-      <div class="nav-links">
-        <a href="#">HOME</a>
-        <a href="#">ABOUT US</a>
-        <a href="#">SHOP</a>
-        <a href="#">BLOG</a>
-        <a href="https://wa.me/7877816484">Connect Us</a>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#EAECF0">
+    <title>ChaiVerse | Brewing Conversations</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="manifest" href="manifest.json">
+</head>
+<body>
+
+    <!-- NAVIGATION -->
+    <div class="nav-wrapper reveal-item">
+        <nav class="nav-pill">
+            <div class="nav-logo">
+                <i class="ri-cup-line"></i> ChaiVerse
+            </div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#reviews">Reviews</a></li>
+            </ul>
+            <div class="nav-cart">
+                <i class="ri-shopping-cart-2-line"></i>
+            </div>
+        </nav>
+    </div>
+
+    <!-- HERO SECTION -->
+    <header class="hero animated-hero">
+        <div class="hero-content">
+            <span class="hero-tagline reveal-item">✨ Crafted with Tradition • Served with Love</span>
+            <h1 class="hero-title reveal-item">Every Cup<br>Tells a Story</h1>
+            <p class="hero-subtitle reveal-item">
+                Warm your hands, calm your mind, and rediscover the joy hidden in every sip.
+                Whether it's a rainy evening, a late-night coding session, or heartfelt conversations with friends, our chai is brewed to create unforgettable moments.
+            </p>
+            <div class="hero-cta-group reveal-item">
+                <button class="btn hero-cta">☕ Explore Our Menu</button>
+                <button class="btn hero-cta outline-btn">📍 Find a Café Near You</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- FLOATING QUOTE -->
+    <section class="floating-quote-section container">
+        <blockquote class="floating-quote reveal-item">
+            "A cup of chai is not just a drink; it's an invitation to pause and live."
+        </blockquote>
+    </section>
+
+    <!-- WHY PEOPLE LOVE US -->
+    <section class="features container" id="about">
+        <h2 class="section-title text-center reveal-item">Why People Love Us</h2>
+        <div class="features-grid">
+            <div class="feature-card reveal-item">
+                <i class="ri-leaf-line feature-icon"></i>
+                <h3>Authentic Ingredients</h3>
+                <p>Handpicked tea leaves blended with natural spices.</p>
+            </div>
+            <div class="feature-card reveal-item">
+                <i class="ri-fire-line feature-icon"></i>
+                <h3>Brewed Fresh Daily</h3>
+                <p>Prepared fresh to preserve aroma and richness.</p>
+            </div>
+            <div class="feature-card reveal-item">
+                <i class="ri-sofa-line feature-icon"></i>
+                <h3>Cozy Ambience</h3>
+                <p>Comfortable spaces designed for conversations and memories.</p>
+            </div>
+            <div class="feature-card reveal-item">
+                <i class="ri-recycle-line feature-icon"></i>
+                <h3>Sustainable Choices</h3>
+                <p>Eco-friendly packaging and responsibly sourced ingredients.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- SIGNATURE CHAI COLLECTION -->
+    <section class="collection container" id="menu">
+        <h2 class="section-title text-center reveal-item">Signature Chai Collection</h2>
+        <div class="collection-grid">
+            <div class="product-card reveal-item">
+                <img src="Assets/pro1.jpeg" alt="Masala Chai">
+                <h3>Masala Chai</h3>
+                <p>A timeless blend of ginger, cardamom, cloves, and black tea.</p>
+            </div>
+            <div class="product-card reveal-item">
+                <img src="Assets/pro2.jpeg" alt="Kulhad Chai">
+                <h3>Kulhad Chai</h3>
+                <p>Traditional earthen cup experience with earthy aromas.</p>
+            </div>
+            <div class="product-card reveal-item">
+                <img src="Assets/pro3.jpeg" alt="Kashmiri Kahwa">
+                <h3>Kashmiri Kahwa</h3>
+                <p>Saffron-infused green tea with almonds and spices.</p>
+            </div>
+            <div class="product-card reveal-item">
+                <img src="Assets/pro5.jpeg" alt="Chocolate Chai">
+                <h3>Chocolate Chai</h3>
+                <p>A delightful fusion of cocoa and classic chai.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- CHAI MOMENTS GALLERY -->
+    <section class="gallery container" id="gallery">
+        <div class="gallery-header text-center reveal-item">
+            <h2 class="section-title">Chai Moments Gallery</h2>
+            <p class="section-desc">"Because some memories deserve another cup."</p>
+        </div>
         
-      </div>
-    </div>
-    <div class="hero">
-      <h1>
-        Mitti Ki
-        <p>Mithas !</p>
-      </h1>
-      <p>
-        A Kullad or Kulhad is a traditional clay cup, <br />
-        made like all earthenware, by firing in kiln. <br />
-        The earthen cup tends to soak up a bit of <br />
-        the hot fluids poured into i. So, when you <br />
-        pour hot tea into a Kullad, a bit of the tea <br />
-        soaks into the clay and the two flavours <br />
-        intermingle and what creates the earthy <br />
-        flavour everyone
-      </p>
-      <button class="hero-btn" id="play-audio">Feel Me❤️‍🩹</i></button>
-    </div>
-    <div class="row">
-      <div class="first">
-        <div class="row-circle">
-          <img src="./img/truck-line.svg" alt="" />
+        <div class="masonry-grid">
+            <div class="masonry-item reveal-item">
+                <img src="Assets/banner1.jpeg" alt="Rainy evenings">
+                <div class="masonry-caption">Rainy evenings</div>
+            </div>
+            <div class="masonry-item reveal-item">
+                <img src="Assets/article1.jpeg" alt="Work-from-café sessions">
+                <div class="masonry-caption">Work-from-café sessions</div>
+            </div>
+            <div class="masonry-item reveal-item">
+                <img src="Assets/banner2.jpg" alt="Friends laughing together">
+                <div class="masonry-caption">Friends laughing together</div>
+            </div>
+            <div class="masonry-item reveal-item">
+                <img src="Assets/article2.jpeg" alt="Books and chai corners">
+                <div class="masonry-caption">Books and chai corners</div>
+            </div>
+            <div class="masonry-item reveal-item">
+                <img src="Assets/article3.jpeg" alt="Sunrise tea rituals">
+                <div class="masonry-caption">Sunrise tea rituals</div>
+            </div>
         </div>
-        <p>
-          Quick <br />
-          delivery
-        </p>
-      </div>
-      <div class="first">
-        <div class="row-circle">
-          <img src="./img/shopping-cart-line.svg" alt="" />
-        </div>
-        <p>
-          Pick up in <br />
-          store
-        </p>
-      </div>
-      <div class="first">
-        <div class="row-circle">
-          <img src="./img/gift-line.svg" alt="" />
-        </div>
-        <p>
-          Best <br />
-          Quality
-        </p>
-      </div>
-      <div class="first">
-        <div class="row-circle">
-          <img src="./img/restart-line.svg" alt="" />
-        </div>
-        <p>
-          Recycled <br />
-          Packaging
-        </p>
-      </div>
-    </div>
-    <div class="about">
-      <div class="about-img">
-        <img src="./Assets/banner2.jpg" alt="" />
-      </div>
-      <div class="about-text">
-        <h1>About Us</h1>
-        <p>
-          <b>Viski Chai☕️</b> are among the very few
-          <b>leading chains</b> that truly have it all! From the
-          <b>invigorating morning chai</b> to <b>delicious desi food</b>, we
-          bring you a <b>cozy, authentic atmosphere</b> perfect for
-          <b>relaxing</b> and <b>hanging out</b>. Picture yourself savoring a
-          <b>steamy kullad chai</b> paired with your favorite
-          <b>desi snacks</b>. We believe in celebrating <b>individuality</b>,
-          which is why Kullad offers a <b>variety of teas</b> and
-          <b>refreshing lassis</b>, catering to every <b>unique taste</b>. Come
-          and experience the <b>charm of desi hospitality</b>, one sip at a
-          time!
-        </p>
-        <button>ABOUT US <i class="ri-arrow-right-line"></i></button>
-      </div>
-    </div>
-    <div class="featured">
-      <div class="featured-heading">
-        <h1>Our Featured Products</h1>
-        <p>shop All <i class="ri-arrow-right-line"></i></p>
-      </div>
-      <div class="container">
-        <div class="slider-wrapper">
-          <button id="prev-slide" class="slide-button material-symbols-rounded">
-            <i class="ri-arrow-left-line"></i>
-          </button>
-          <ul class="image-list">
-            <img class="image-item" src="./Assets/pro8.jpeg" alt="img-1" />
-            <img class="image-item" src="./Assets/pro12.jpeg" alt="img-2" />
-            <img class="image-item" src="./Assets/pro6.jpeg" alt="img-3" />
-            <img class="image-item" src="./Assets/pro4.jpeg" alt="img-4" />
-            <img class="image-item" src="./Assets/pro5.jpeg" alt="img-5" />
-            <img class="image-item" src="./Assets/pro3.jpeg" alt="img-6" />
-            <img class="image-item" src="./Assets/pro7.jpeg" alt="img-7" />
-            <img class="image-item" src="./Assets/pro1.jpeg" alt="img-8" />
-            <img class="image-item" src="./Assets/pro9.jpeg" alt="img-9" />
-            <img class="image-item" src=".//Assets/pro10.jpeg" alt="img-10" />
-          </ul>
-          <button id="next-slide" class="slide-button material-symbols-rounded">
-            <i class="ri-arrow-right-line"></i>
-          </button>
-        </div>
-        <div class="slider-scrollbar">
-          <div class="scrollbar-track">
-            <div class="scrollbar-thumb"></div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="testimonials">
-      <img src="./img/quote.png" alt="" />
+    </section>
 
-      <blockquote>
-        <p>Premium quality clay for smooth and durable Kullad making.</p>
-        <p>A complete set of hand tools for detailing and finishing touches.</p>
-        <p>Easy-to-use pottery wheel designed for precision and efficiency.</p>
-      </blockquote>
-      <p>@ethical_khoriya 🏺</p>
-    </div>
-    <div class="card-heading">
-      <h1>Chai Kullad ☕</h1>
-      <h1>Lassi Kullad 🥤</h1>
-      <h1>Milk Kullad 🥛</h1>
-    </div>
-    <div class="card-container">
-      <div class="card">
-        <div class="card-image">
-          <img src="./Assets/pro13.jpeg" alt="img-1" />
+    <!-- TESTIMONIALS -->
+    <section class="testimonials container" id="reviews">
+        <h2 class="section-title text-center reveal-item">Testimonials</h2>
+        <div class="testimonials-grid">
+            <div class="testimonial-card reveal-item">
+                <div class="stars">★★★★★</div>
+                <p class="quote">"Best chai experience I've ever had. It feels like home."</p>
+                <p class="author">— Priya Sharma</p>
+            </div>
+            <div class="testimonial-card reveal-item">
+                <div class="stars">★★★★★</div>
+                <p class="quote">"The ambience, aroma, and taste make every visit special."</p>
+                <p class="author">— Rahul Verma</p>
+            </div>
+            <div class="testimonial-card reveal-item">
+                <div class="stars">★★★★★</div>
+                <p class="quote">"I came for tea and stayed for conversations."</p>
+                <p class="author">— Sneha Gupta</p>
+            </div>
         </div>
-        <div class="card-details">
-          <h3 class="card-title">100ML & 80ML</h3>
-          <p class="card-description">
-            Perfect for serving aromatic chai, this kullad enhances the earthy
-            flavors of every brew with its authentic clay design.
-          </p>
-          <ul class="card-ul">
-            <li class="card-li">"Savor every sip of tradition."</li>
-            <li class="card-li">
-              "Brewed to perfection, served in tradition."
-            </li>
-            <li class="card-li">"Ideal for espresso or filter coffee."</li>
-          </ul>
-          <p class="card-price">Learn more</p>
-        </div>
-      </div>
+    </section>
 
-      <div class="card">
-        <div class="card-image">
-          <img src="./Assets/pro17.jpg" alt="img-1" />
+    <!-- CHAI WISDOM -->
+    <section class="wisdom-section reveal-item">
+        <div class="wisdom-scroller">
+            <span>❝ Life happens, chai helps. ❞</span>
+            <span>❝ Sip slowly. Some moments are too beautiful to rush. ❞</span>
+            <span>❝ Happiness is sharing a hot cup of chai with someone who listens. ❞</span>
+            <span>❝ Conversations begin where coffee ends and chai starts. ❞</span>
+            <span>❝ Behind every successful idea, there's usually a cup of chai. ❞</span>
         </div>
-        <div class="card-details">
-          <h3 class="card-title">250ML & 120ML Kullad</h3>
-          <p class="card-description">
-            Perfect for serving refreshing lassi, this kullad adds an earthy
-            charm to your drink with its authentic clay craftsmanship.
-          </p>
-          <ul class="card-ul">
-            <li class="card-li">"Sip on tradition, one lassi at a time."</li>
-            <li class="card-li">"Refreshing, earthy, and timeless."</li>
-            <li class="card-li">
-              "Designed for the perfect lassi experience."
-            </li>
-          </ul>
-          <p class="card-price">learn more</p>
-        </div>
-      </div>
+    </section>
 
-      <div class="card">
-        <div class="card-image">
-          <img src="./Assets/pro18.avif" alt="img-1" />
+    <!-- STATISTICS -->
+    <section class="statistics container">
+        <div class="stats-grid">
+            <div class="stat-item reveal-item">
+                <h3 class="stat-num">10,000+</h3>
+                <p>Happy Customers</p>
+            </div>
+            <div class="stat-item reveal-item">
+                <h3 class="stat-num">25+</h3>
+                <p>Unique Flavours</p>
+            </div>
+            <div class="stat-item reveal-item">
+                <h3 class="stat-num">15</h3>
+                <p>Cities Served</p>
+            </div>
+            <div class="stat-item reveal-item">
+                <h3 class="stat-num">98%</h3>
+                <p>Positive Reviews</p>
+            </div>
         </div>
-        <div class="card-details">
-          <h3 class="card-title">180ML & 200ML Milk Kullad</h3>
-          <p class="card-description">
-            Ideal for a larger serving, this 200ml kullad enhances the creamy
-            goodness of milk while keeping it refreshingly cool.
-          </p>
-          <ul class="card-ul">
-            <li class="card-li">
-              "For a true milk experience, served in tradition."
-            </li>
-            <li class="card-li">"Pure, fresh, and served with care."</li>
-            <li class="card-li">"An elegant blend of taste and tradition."</li>
-          </ul>
-          <p class="card-price">Learn more</p>
-        </div>
-      </div>
-    </div>
-    <div class="dots">
-      <div class="dot1">
-        <div class="small-dot"></div>
-      </div>
-      <div class="dot2"></div>
-    </div>
-    <div class="subscribe">
-      <h1>A Complete Clay Style Kullad</h1>
-      <div class="subscribe-input">
-          <input type="text" id="whatsappMessage" placeholder="Enter A Note for Kullad" />
-          <button class="subscribe-btn" onclick="sendWhatsAppMessage()">Connect</button>
-      </div>
-  </div>
-  
-    <div class="featured-heading tranding-heading">
-      <h1>Most Demanding Kullads</h1>
-      <p>Fix Price <i class="ri-arrow-right-line"></i></p>
-    </div>
-    <div class="tranding">
-      <div class="tranding-images">
-        <img class="tranding-img" src="./Assets/pro10.jpeg" alt="" />
-        <h2 class="tranding-heading-h2">70ML Kullad</h2>
-        <p>On Demand</p>
-      </div>
-      <div class="tranding-images">
-        <img class="tranding-img" src="./Assets/pro13.jpeg" alt="" />
-        <h2 class="tranding-heading-h2">80ML Kullad</h2>
-        <p>On Demand</p>
-      </div>
-      <div class="tranding-images">
-        <img class="tranding-img" src="./Assets/pro3.jpeg" alt="" />
-        <h2 class="tranding-heading-h2">100ML Kullad</h2>
-        <p>On Demand</p>
-      </div>
-      <div class="tranding-images">
-        <img class="tranding-img" src="./Assets/pro8.jpeg" alt="" />
-        <h2 class="tranding-heading-h2">120ML Kullad</h2>
-        <p>On Demand</p>
-      </div>
-      <div class="tranding-images">
-        <img class="tranding-img" src="./Assets/pro16.jpeg" alt="" />
-        <h2 class="tranding-heading-h2">180ML Kullad</h2>
-        <p>On Demand</p>
-      </div>
-      <div class="tranding-images">
-        <img class="tranding-img" src="./Assets/pro12.jpeg" alt="" />
-        <h2 class="tranding-heading-h2">250ML Kullad</h2>
-        <p>On Demand</p>
-      </div>
-    </div>
-    <div class="dots">
-      <div class="dot1">
-        <div class="small-dot"></div>
-      </div>
-      <div class="dot2"></div>
-    </div>
-    <div class="featured-heading tranding-heading artical-heading">
-      <h1>Read our Articles</h1>
-      <p>see all articals <i class="ri-arrow-right-line"></i></p>
-    </div>
-    <div class="articals">
-      <div class="artical-card">
-        <img src="./Assets/article1.jpeg" alt="" />
-        <h2>The Perfect Kullad for Your Morning Chai ☕</h2>
-        <h6>
-          Experience the warmth of tradition with <br />
-          our handcrafted kullads, designed to elevate <br />
-          your chai experience.
-        </h6>
-        <p class="card-price">READ MORE</p>
-      </div>
-      <div class="artical-card">
-        <img src="./Assets/article2.jpeg" alt="" />
-        <h2>Refreshing Lassi in Classic Kullads 🥤</h2>
-        <h6>
-          Our kullads bring out the authentic taste <br />
-          of lassi with their earthy essence and timeless design.
-        </h6>
-        <p class="card-price">READ MORE</p>
-      </div>
-      <div class="artical-card">
-        <img src="./Assets/article3.jpeg" alt="" />
-        <h2>Milk Served Best in 200ml Kullads 🥛</h2>
-        <h6>
-          Enjoy creamy milk served in kullads that <br />
-          keep your drink naturally cool and fresh.
-        </h6>
-        <p class="card-price">READ MORE</p>
-      </div>
-    </div>
-    <div class="companies">
-      <div class="comp-images">
-        <div class="comp-img1 selected-img"></div>
-        <div class="comp-img2 selected-img"></div>
-        <div class="comp-img3 selected-img"></div>
-        <div class="comp-img4 selected-img"></div>
-        <div class="comp-img5 selected-img"></div>
-      </div>
-    </div>
-    <div class="footer">
-      <div class="furnic">
-        <div class="icon furnic-icon">
-          <h2>Viski Chai☕️</h2>
-        </div>
-        <p class="footer-text">
-          Embrace tradition with every sip, served in our handcrafted kullads.
-          Perfect for chai, lassi, or milk – where authenticity meets elegance.
-          <br /><br />
-          © Copyright 2023. Crafted with ❤️ by Kullad Creations. Distributed by
-        </p>
-      </div>
-      <div class="links">
-        <h2>Quick Links</h2>
-        <ul>
-          <li><a href="">Home</a></li>
-          <li><a href="">About</a></li>
-          <li><a href="">Services</a></li>
-          <li><a href="">Blogs</a></li>
-          <li><a href="">Contect </a></li>
-        </ul>
-      </div>
-      <div class="links">
-        <h2>Follow Us</h2>
-        <ul>
-          <li><a href="https://wa.me/7627097147">WhatsApp</a></li>
-          <li>
-            <a href="https://www.linkedin.com/in/naitik-khoriya-4962a9229/"
-              >LinkedIn</a
-            >
-          </li>
-          <li><a href="https://github.com/naitikhoriya1">Github</a></li>
-          <li>
-            <a href="https://www.instagram.com/ethical_khoriya/">Instagram</a>
-          </li>
-          <li><a href="https://x.com/Naitikhoriya">X</a></li>
-        </ul>
-      </div>
-      <div class="links contect">
-        <h2>Contect Us</h2>
-        <ul>
-          <li>
-            <a href="#">+917877816484 <b>NAITIK KHORIYA</b> </a>
-          </li>
-          <li>
-            <a href="#">+917627097147 <b>SUSHEEL KHORIYA</b> </a>
-          </li>
-          <li><a href="#">naitikhoriya1@gmail.com</a></li>
-          <li>
-            <a href="#"
-              >Bahadurpur 301028 Alwar, <br />
-              India ❤️</a
-            >
-          </li>
-        </ul>
-      </div>
-    </div>
-    <audio id="background-music" autoplay controls loop>
-      <source src="./music/background.mp3" type="audio/mp3" />
-      <!-- Your browser does not support the audio element. -->
-    </audio>
+    </section>
 
-    <script>
-      function sendWhatsAppMessage() {
-          let message = document.getElementById("whatsappMessage").value;
-          let phoneNumber = "1234567890"; // Replace with the WhatsApp number
-          let url = `https://wa.me/${7877816484}?text=${encodeURIComponent(message)}`;
-          window.open(url, "_blank");
-      }
-  </script>
-  
-    <script src="./script.js"></script>
-    <script>
-        if ('serviceWorker' in navigator) {
-            window.addEventListener('load', () => {
-                navigator.serviceWorker.register('/sw.js')
-                    .then(registration => {
-                        console.log('ServiceWorker registration successful');
-                    })
-                    .catch(err => {
-                        console.log('ServiceWorker registration failed: ', err);
-                    });
-            });
-        }
-    </script>
-  </body>
+    <!-- NEWSLETTER -->
+    <section class="newsletter container reveal-item">
+        <div class="newsletter-box">
+            <h2 class="section-title">Stay Warm, Stay Connected</h2>
+            <p class="section-desc">Get exclusive offers, brewing tips, and inspiring chai stories delivered to your inbox.</p>
+            <form class="newsletter-form">
+                <input type="email" placeholder="Enter Your Email" required>
+                <button type="submit" class="btn btn-primary">Subscribe</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- FINAL CTA -->
+    <section class="final-cta container text-center reveal-item">
+        <h2 class="section-title">Ready for Your Next Chai Break?</h2>
+        <p class="section-desc">Take a pause from the hustle and let every sip remind you that life's simplest pleasures are often the most meaningful.</p>
+        <div class="final-cta-buttons">
+            <button class="btn btn-primary">☕ Order Now</button>
+            <button class="btn btn-outline">📖 Read Chai Stories</button>
+            <button class="btn btn-outline">🌿 Visit Our Café</button>
+        </div>
+    </section>
+
+    <!-- FOOTER QUOTE -->
+    <footer class="footer container text-center reveal-item">
+        <blockquote class="footer-quote">
+            "Tea is quiet and our thirst for tea is never far from our craving for beauty."
+        </blockquote>
+        <p class="footer-author">— James Norwood Pratt</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
 </html>

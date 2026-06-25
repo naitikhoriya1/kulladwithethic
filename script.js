@@ -1,96 +1,30 @@
-const initSlider = () => {
-  const imageList = document.querySelector(".slider-wrapper .image-list");
-  const slideButtons = document.querySelectorAll(
-    ".slider-wrapper .slide-button"
-  );
-  const sliderScrollbar = document.querySelector(
-    ".container .slider-scrollbar"
-  );
-  const scrollbarThumb = sliderScrollbar.querySelector(".scrollbar-thumb");
-  const maxScrollLeft = imageList.scrollWidth - imageList.clientWidth;
+/* =============================================================
+   ChaiVerse — Minimalist JS
+   ============================================================= */
 
-  // Handle scrollbar thumb drag
-  scrollbarThumb.addEventListener("mousedown", (e) => {
-    const startX = e.clientX;
-    const thumbPosition = scrollbarThumb.offsetLeft;
-    const maxThumbPosition =
-      sliderScrollbar.getBoundingClientRect().width -
-      scrollbarThumb.offsetWidth;
+/* ─── 1. SCROLL-REVEAL ────────────────────────────────────── */
+const revealElements = document.querySelectorAll('.reveal-item');
 
-    // Update thumb position on mouse move
-    const handleMouseMove = (e) => {
-      const deltaX = e.clientX - startX;
-      const newThumbPosition = thumbPosition + deltaX;
+// Set initial state
+revealElements.forEach(el => {
+  el.style.opacity = '0';
+  el.style.transform = 'translateY(30px)';
+  el.style.transition = 'opacity 0.8s ease, transform 0.8s ease';
+});
 
-      // Ensure the scrollbar thumb stays within bounds
-      const boundedPosition = Math.max(
-        0,
-        Math.min(maxThumbPosition, newThumbPosition)
-      );
-      const scrollPosition =
-        (boundedPosition / maxThumbPosition) * maxScrollLeft;
-
-      scrollbarThumb.style.left = `${boundedPosition}px`;
-      imageList.scrollLeft = scrollPosition;
-    };
-
-    // Remove event listeners on mouse up
-    const handleMouseUp = () => {
-      document.removeEventListener("mousemove", handleMouseMove);
-      document.removeEventListener("mouseup", handleMouseUp);
-    };
-
-    // Add event listeners for drag interaction
-    document.addEventListener("mousemove", handleMouseMove);
-    document.addEventListener("mouseup", handleMouseUp);
+const revealObserver = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.style.opacity = '1';
+      entry.target.style.transform = 'translateY(0)';
+      revealObserver.unobserve(entry.target);
+    }
   });
+}, {
+  threshold: 0.15,
+  rootMargin: '0px 0px -50px 0px'
+});
 
-  // Slide images according to the slide button clicks
-  slideButtons.forEach((button) => {
-    button.addEventListener("click", () => {
-      const direction = button.id === "prev-slide" ? -1 : 1;
-      const scrollAmount = imageList.clientWidth * direction;
-      imageList.scrollBy({ left: scrollAmount, behavior: "smooth" });
-    });
-  });
-
-  // Show or hide slide buttons based on scroll position
-  const handleSlideButtons = () => {
-    slideButtons[0].style.display = imageList.scrollLeft <= 0 ? "none" : "flex";
-    slideButtons[1].style.display =
-      imageList.scrollLeft >= maxScrollLeft ? "none" : "flex";
-  };
-
-  // Update scrollbar thumb position based on image scroll
-  const updateScrollThumbPosition = () => {
-    const scrollPosition = imageList.scrollLeft;
-    const thumbPosition =
-      (scrollPosition / maxScrollLeft) *
-      (sliderScrollbar.clientWidth - scrollbarThumb.offsetWidth);
-    scrollbarThumb.style.left = `${thumbPosition}px`;
-  };
-
-  // Call these two functions when image list scrolls
-  imageList.addEventListener("scroll", () => {
-    updateScrollThumbPosition();
-    handleSlideButtons();
-  });
-};
-
-window.addEventListener("resize", initSlider);
-window.addEventListener("load", initSlider);
-
-// for background music
-const audio = document.getElementById("background-music");
-const playButton = document.getElementById("play-audio");
-
-playButton.addEventListener("click", () => {
-  audio
-    .play()
-    .then(() => {
-      playButton.style.display = "none"; // Hide the button after starting the music
-    })
-    .catch((error) => {
-      console.error("Error playing the audio:", error);
-    });
+revealElements.forEach(el => {
+  revealObserver.observe(el);
 });
